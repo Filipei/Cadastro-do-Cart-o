@@ -1,0 +1,212 @@
+body{
+    background-color: #191919;
+    display: flex;
+    justify-content: center;
+}
+.container{
+    margin: 50px;
+    height: 350px;
+    width: 700px;
+    background-color: #2c2c2c;
+    border-radius: 5px;
+    display: flex;
+    font-family: "Orbitron", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+      
+}
+.cartaofisico{
+    width: 300px;
+    height: 200px;
+    background-color: #FF3CAC;
+    background-image: linear-gradient(225deg, #FF3CAC 0%, #784BA0 50%, #2B86C5 100%); 
+    margin-top: 70px;
+    margin-left: 40px;
+    border-radius: 5px;
+}
+.dados{
+    margin-left: 60px;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+}
+.nome{
+    display: flex;
+    flex-direction: column;
+}
+h1{
+    font-size: 15px;
+    color: #a0a0a0;
+}
+h2{
+    font-size: 12px;
+    color: #c0c0c0;
+}
+.inputnome{
+    height: 30px;
+    width: 250px;
+    border: 1px solid #f6ecff;
+    display: flex;
+    border-radius: 5px;
+}
+.inputg{
+    border: none;
+    font-size: 10px;
+    width: 210px;
+    font-size: 15px;
+    color: white;
+    background: none;
+}
+.inputg:focus{
+    outline: none;
+    border: none;
+}
+.inputg::placeholder{
+    color: #c0c0c0;
+    font-family: "Orbitron", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+}
+.cartao{
+    margin-top: 10px;
+}
+.inputnumero{
+    height: 30px;
+    width: 250px;
+    border: 1px solid #f6ecff;
+    display: flex;
+    border-radius: 5px;
+}
+.inputdata{
+    height: 30px;
+    width: 100px;
+    border: 1px solid #f6ecff;
+    display: flex;
+    border-radius: 5px; 
+}
+.inputs{
+    background: none;
+    border: none;
+    font-size: 10px;
+    width: 60px;
+    font-size: 15px;
+    color: white;
+
+}
+.inputs:focus{
+    outline: none;
+    border: none;
+}
+.inputs::placeholder{
+    color: #c0c0c0;
+    font-family: "Orbitron", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+}
+.cvvdt{
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-evenly;
+}
+.cvv{
+    margin-left: 30px;
+}
+.inputcvv{
+    height: 30px;
+    width: 100px;
+    border: 1px solid #f6ecff;
+    display: flex;
+    border-radius: 5px; 
+}
+button{
+    margin-top: 20px;
+    border-radius: 5px;
+    background-color: #be38f3;
+    color: white;
+    border: none;
+    cursor: pointer;
+    height: 30px;
+}
+button:hover{
+    transition: 0.5s;
+    background-color: #800080;
+    color: white;
+    filter: drop-shadow(2px 2px 7px #800080);
+}
+button{
+    font-family: "Orbitron", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+}
+.pop{
+    background-color: #800080;
+    color: white;
+    font-family: "Orbitron", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal; 
+}
+.buttonswet{
+    background-color: white;
+    color: #800080;
+    border: none;
+    width: 100px;
+    height: 35px;
+}
+.numcartao{
+    margin-left: 20px;
+    color: white;
+}
+.nomecartao{
+    margin-top: 30px;
+    margin-left: 20px;
+    color: white;
+}
+#nomecartaotext{
+    margin-top: -10px;
+}
+#numerocartaotext{
+    margin-top: -10px;
+}
+#cvvcartaotext{
+    margin-top: -10px;
+}
+.cvvedt{
+    display: flex;
+    margin-left: 20px;
+    color: white;
+}
+#datacartaotext{
+    margin-top: -10px;
+}
+.cvvcartao{
+    margin-left: 40px;
+}
+input[type="tel"] {
+    outline: none;
+    color:white ;
+}
+@media( min-width:320px)and (max-width:480px){
+    .container{
+        flex-direction: column;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 600px;
+        border-radius: 20px;
+        background: none;
+    }
+    .cartaofisico{
+        margin-top: -40px;
+        margin-left: 0px;
+    }
+    .dados{
+        margin-left: 0px;
+        margin-top: 10px;
+
+    }
+}

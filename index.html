@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap" rel="stylesheet">
+    <link rel="icon" href="./imagens usadas/Design_sem_nome__4_-removebg-preview.png">
+    <title>Cadastro Cartão</title>
+</head>
+<body>
+    <div class="container">
+        <div class="cartaofisico">
+            <div class="nomecartao">
+                <h2>Nome</h2>
+                <p id="nomecartaotext">Digite Seu nome</p>
+            </div>
+            <div class="numcartao">
+                <h2 id="textnum">Numero do cartão</h2>
+                <p id="numerocartaotext">0000 0000 0000 0000</p>
+            </div>
+            <div class="cvvedt">
+                <div class="datacartao">
+                    <h2>Data</h2>
+                    <p id="datacartaotext">00/00</p>
+                </div>
+                <div class="cvvcartao">
+                    <h2>CVV</h2>
+                    <P id="cvvcartaotext">000</P>
+                </div>
+            </div>
+        </div>
+        <div class="dados">
+            <div class="nome">
+                <div class="cadastre">
+                    <h1>Cadastre seu Cartão</h1>                          
+                </div>
+                <div class="nome">
+                    <h2>Nome no Cartão</h2>
+                </div>
+                <div class="inputnome">
+                    <img src="./imagens usadas/bg-removebg-preview.png" alt="" width="30px" height="30px">
+                    <input id="nome" class="inputg" type="text" placeholder="Digite o nome aqui" oninput="substituir()">                                
+                </div>
+            </div>
+            <div class="cartao">
+                <div class="cartaotext">
+                    <h2>Numero do Cartão</h2>
+                </div>
+                <div class="inputnumero">
+                    <img src="./imagens usadas/Design_sem_nome__4_-removebg-preview.png" alt="" width="30px" height="30px">
+                    <input id="numero" class="inputg" type="tel" placeholder="Digite o numero aqui" minlength="19" maxlength="19" oninput="formatoautonumero(this), substituirnum()"> 
+                </div>
+            </div>
+            <div class="cvvdt">
+                <div class="data">
+                    <div class="datatext">
+                        <h2>Data</h2>
+                    </div>
+                    <div class="inputdata">
+                        <img src="./imagens usadas/Design_sem_nome__2_-removebg-preview.png" alt="" width="30px" height="30px">
+                        <input class="inputs" type="text" id="data" placeholder="MM/AA" maxlength="5" oninput="formatoautoData(this),substituirdata() " >
+                    </div>
+                </div>
+                <div class="cvv">
+                    <div class="cvvtext">
+                        <h2>CVV</h2>
+                    </div>
+                    <div class="inputcvv">
+                        <img src="./imagens usadas/Design_sem_nome__5_-removebg-preview.png" alt="" width="30px" height="30px">
+                        <input id="cvv" class="inputs" type="tel" placeholder="CVV" maxlength="3" oninput="substituircvv()">
+                    </div>
+                </div>
+            </div>
+            <button onclick="cadastrarbutton()">Cadastrar</button>
+        </div>
+    </div>
+
+    <script src="./script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</body>
+</html>
